@@ -1,0 +1,1324 @@
+% 这是海南大学与怀卡托大学智能科学与技术专业2023级课程描述模版
+% 
+% 当前版本整理自怀卡托大学官网每门课的课程描述，以及海南大学Canvas上的课程描述
+% 
+% 如有需要可根据自己课程内容进行修改
+% 
+% 作者：郭子墨 2023级
+% 
+% github: 
+
+
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{array}
+\usepackage{amssymb}
+\usepackage{longtable}
+
+\hypersetup{colorlinks=true,linkcolor=black}
+
+\makeatletter
+\newcommand{\rmnum}[1]{\romannumeral #1}
+\newcommand{\Rmnum}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+\usepackage[top=2.5cm, bottom=2.5cm, left=3cm, right=3cm]{geometry}
+% 页眉和页脚设置
+\pagestyle{fancy}
+\fancyhf{} % 清空默认的页眉和页脚
+\fancyfoot[C]{\thepage} % 页脚中央显示页码
+\renewcommand{\headrulewidth}{0.4pt} % 页眉下方的横线
+\fancyhead[R]{\nouppercase{\leftmark}} % 将课程类型放在页眉右侧
+
+% 封面
+\title{Course Description}
+\author{Zimo Guo}
+\date{\today}
+\newcommand{\studentname}{Zimo Guo}
+\newcommand{\majornameA}{Computer Science}
+\newcommand{\majornameB}{Intelligence Science and Technology}
+\newcommand{\univA}{University of Waikato}
+\newcommand{\collegeA}{School of Computing and Mathematical Sciences}
+\newcommand{\univB}{Hainan University}
+\newcommand{\collegeB}{School of Information and Communication Engineering}
+
+
+\begin{document}
+
+% title page
+\begin{titlepage}
+ \centering
+ \vspace*{2.5cm}
+ {\Huge \textbf{Course Description}\par}
+ \vspace{1.5cm}
+ {\LARGE\studentname\par}
+ \vfill
+ {\LARGE\emph{\majornameA}\par}
+ \vspace{0.5cm}
+ {\Large\bfseries\univA\par}
+ {\large\collegeA\par}
+ \vspace{1.2cm}
+ {\LARGE\emph{\majornameB}\par}
+ \vspace{0.5cm}
+ {\Large\bfseries\univB\par}
+ {\large\collegeB\par}
+ \vfill
+\end{titlepage}
+
+\clearpage
+
+% some notes
+\thispagestyle{empty}
+\section*{Notes}
+\begin{itemize}
+    \item Hainan University requires a total of 158 credits, and the University of Waikato requires 360 points.
+    \item Some courses have different names in the two transcripts but are the same course.
+        \begin{itemize}
+            \item ``Mathematics 1A'' in UoW and ``Introduction to Calculus'' in HNU.
+            \item ``General Physics'' in UoW and ``General Physics C'' in HNU.
+            \item ``Introduction to Databases and Web Development'' in UoW and ``Introduction to Databases'' in HNU.
+        \end{itemize} 
+    \item Credits (HNU) are the credit values recorded on the HNU transcript and teaching plan.
+    \item Contact Hours are the scheduled class hours of each course, covering lectures and laboratory work. They do not include time spent on private study.
+    \item Points (UoW) are the point values recorded on the University of Waikato transcript and teaching plan.
+    \item Some courses are from Hainan University: 
+        \begin{itemize}
+            \item Fundamentals of Comprehensive Mathematics
+            \item Random Process
+            \item Python Programming
+            \item Digital Image Processing
+            \item Deep Learning
+            \item Algorithm Analysis and Design
+            \item Signals and Systems
+            \item Principle of Automatic Control
+            \item Engineering Drafting and CAD
+        \end{itemize}
+\end{itemize}
+
+\clearpage
+
+\setcounter{page}{1}
+\pagenumbering{roman}
+\tableofcontents % 添加目录
+
+\clearpage
+
+\pagestyle{fancy} % 重新激活页眉和页脚
+\pagenumbering{arabic}
+
+% part of math courses
+\section{Mathematics}
+\markright{Mathematics}
+
+% 如果想一页一门课，可以在每门课的subsection之后添加 \clearpage
+
+\subsection[MATHS103 Mathematics 1A]{Mathematics 1A}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Code} & MATHS103 \\
+\hline
+\textbf{Course Name} & Mathematics 1A\\
+\hline
+\textbf{Credits (HNU)} & 5.0 \\
+\hline
+\textbf{Points (UoW)} & 15 \\
+\hline
+\textbf{Contact Hours} & 80 \\
+\hline
+\textbf{Textbook} & \emph{Calculus}, James Stewart\\
+\hline
+\textbf{Description} & This paper is the first paper in the calculus. \\
+\hline
+\textbf{Topic} & Differentiation: what is it, how to use it, how to do it, applications. Integration: what is it, antiderivatives and integrals, substitution, applications. \\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Understand foundational mathematical concepts, notation, and ideas to a sufficient level so as to recognise, understand and work with these concepts as they arise in applications
+        \item Appreciate how these mathematical ideas can be used as a tool and thus formulate an appropriate mathematical description of problems
+        \item Recognise and use appropriate mathematical techniques to solve problems formulated in mathematical terms
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+
+\subsection[MATHS201 Continuing Calculus]{Continuing Calculus}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Code} & MATHS201 \\
+\hline
+\textbf{Course Name} & Continuing Calculus\\
+\hline
+\textbf{Credits (HNU)} & 6.0 \\
+\hline
+\textbf{Points (UoW)} & 15 \\
+\hline
+\textbf{Contact Hours} & 96 \\
+\hline
+\textbf{Textbook} & \emph{Calculus}, James Stewart \\
+\hline
+\textbf{Description} & The first two-thirds of MATHS201 teaches multi-variable calculus and vector calculus, the last third teaches ordinary differential equations and Laplace transform. \\
+\hline
+\textbf{Topic} & Partial differentiation, multivariable chain rule, polar curves, multiple integrals, polar, cylindrical and spherical coordinates, Jacobian, stationary points and second derivative test, Lagrange multipliers. Scalar and vector fields, grad, div, curl, line and surface integrals, scalar potential and the gradient theorem, directional derivative, Green's, Stokes' and Gauss' Theorems. Linear ordinary differential equations. Laplace transform, Heaviside step function, Dirac delta function. \\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Apply knowledge of multi-variable calculus, vector calculus and advanced calculus to solve engineering problems
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\subsection[MATHS202 Linear Algebra]{Linear Algebra}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Code} & MATHS202 \\
+\hline
+\textbf{Course Name} & Linear Algebra\\
+\hline
+\textbf{Credits (HNU)} & \\
+\hline
+\textbf{Points (UoW)} & 15 \\
+\hline
+\textbf{Contact Hours} & 48 \\
+\hline
+\textbf{Textbook} & \emph{Introduction to Linear Algebra}, Gilbert Strang \\
+\hline
+\textbf{Description} & This paper provides a thorough study of linear algebra and introduces the other algebraic structure which are the basis of modern algebra. \\
+\hline
+\textbf{Topic} & Linear systems, Cramer's rule, Gauss-Jordan method. Vector algebra and equations of lines and planes. Linear systems as functions. Matrix algebra. Matrix transformations in 2D. Inverses and determinants. Eigenvalues and eigenspace. \\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Solve systems of linear equations via the Gauss Jordan method, find matrix inverses and compute determinants by cofactor expansion and Gaussian elimination.
+        \item Determine whether a set of vectors is linear independent, forms a subspace or a basis and determine the dimension of the span of a set of vectors. Understand and apply the rank-nullity theorem in the context of linear transformations.
+        \item Apply the Gram-Schmidt process to the Euclidean dot product. Compute the eigenvalues, eigenvectors and (where possible) the diagonalisation of a matrix.
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\subsection[DATAX121 Introduction to Statistical Methods]{Introduction to Statistical Methods}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Code} & DATAX121 \\
+\hline
+\textbf{Course Name} & Introduction to Statistical Methods \\
+\hline
+\textbf{Credits (HNU)} & 3.5 \\
+\hline
+\textbf{Points (UoW)} & 15 \\
+\hline
+\textbf{Contact Hours} & 56 \\
+\hline
+\textbf{Textbook} & No textbook \\
+\hline
+\textbf{Description} & This course is a basic required course for non-statistics majors, the contents of this course include: Data and its source, descriptive analysis of data, the properties of probability, distribution function, discrete random variable, continuous random variable, the law of large number, central limit theory, parameter estimation, hypothesis test, classified data analysis, regression analysis, time series analysis, index and so on. Students are required to have a basic grasp of probability theory and mathematical statistics before the course of statistics is offered.\\
+\hline
+\textbf{Topic} & Introduction and Summarising Data. Probability Basics(Events, axioms and conditional probability. Bayes Theorem, independence and random variables. Discrete random variables and their properties. Continuous random variables and their properties. Joint, conditional, and i.i.d. random variables. Maximum likelihood estimation. Central limit theorem). Probability Distributions(Binomial Distribution, Normal Distribution, Sampling Concepts); Hypothesis Testing; Confidence Intervals; Categorical Data Analysis; Regression Analysis(Linear Regression, Logistic Regression); Extensions and Exam Revision. \\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item To enable students to systematically master the basic statistical methods and understand the statistical ideas contained in various statistical methods
+        \item To make students master various kinds of statistics, different characteristics of methods, application conditions and applicable occasions
+        \item Cultivate students' ability to analyze and solve practical problems by using statistical methods
+        \item Learn to use SPSS and Excel software analysis, data and reasonable interpretation of software output results
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\subsection[MATHX135 Discrete Structures]{Discrete Structures}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Code} & MATHX135 \\
+\hline
+\textbf{Course Name} & Discrete Structures\\
+\hline
+\textbf{Credits (HNU)} & 3.0 \\
+\hline
+\textbf{Points (UoW)} & 15 \\
+\hline
+\textbf{Contact Hours} & 48 \\
+\hline
+\textbf{Textbook} & \emph{Discrete Mathematical Structures}, Bernard Kolman, Robert C. Busby and Sharon Cutler Ross\\
+\hline
+\textbf{Description} & An introduction to a number of the structures of discrete mathematics with wide applicability in areas such as: computer logic, analysis of algorithms, telecommunications, networks and public key cryptography. In addition it introduces a number of fundamental concepts which are useful in Statistics, Computer Science and further studies in Mathematics. \\
+\hline
+\textbf{Topic} & 
+Propositional Logic
+\begin{itemize}
+    \item Basic Concepts of Propositional Logic: Propositions and Compound Propositions, Propositional Formulas and Truth Tables, Implication Formulas, Assignments
+    \item Equivalence Calculus in Propositional Logic: Equivalence Formulas, Disjunctive Normal Form and Conjunctive Normal Form, Complete Sets, Satisfiability
+    \item Inference Theory in Propositional Logic: Formal Structure of Inference, Inference Laws, Inference Systems
+\end{itemize}
+
+Predicate Logic
+\begin{itemize}
+    \item Predicates and Quantifiers, Symbolization of Propositions, Predicate Formulas, Assignments and Interpretations
+    \item Equivalence Calculus and Inference in First-Order Logic: Equivalence Formulas and Replacement Rules, Bound (Free) Variables, Terms, Prenex Normal Form
+    \item Transformation of Compound Predicate Forms, Inference Rules in Predicate Logic
+\end{itemize}
+
+Set Theory
+\begin{itemize}
+    \item Sets, Relations Between Sets, Set Operations, Power Sets
+    \item Basic Set Identities, Set Counting
+\end{itemize}
+
+Relations and Functions
+\begin{itemize}
+    \item Ordered Pairs, Cartesian Products, Definition and Operations of Binary Relations
+    \item Different Representations of Relations, Properties of Relations, Composition of Relations, Inverse Relations, Closures of Relations
+    \item Definition and Properties of Functions, Common Functions, Composition of Functions, Inverse Functions
+\end{itemize}
+
+Special Relations
+\begin{itemize}
+    \item Compatibility Relations and Coverings
+    \item Equivalence Relations and Partitions
+    \item Order Relations (Partial Order, Quasi-Order, Total Order, and Well-Order)
+    \item Lattices (Partially Ordered Lattices, Distributive Lattices, Complemented Lattices)
+\end{itemize}
+
+Algebraic Systems
+\begin{itemize}
+    \item Algebraic Systems, Identity Elements, Zero Elements, Inverse Elements
+    \item Semigroups, Monoids, Groups, Cyclic Groups, Subgroups
+    \item Isomorphism, Homomorphism
+\end{itemize}\\
+
+\hline
+\textbf{Topic (continued)} &
+Graph Theory
+\begin{itemize}
+    \item Graphs, Subgraphs, Degrees of Vertices, Complete Graphs, Bipartite Graphs, Connectivity, Cut Sets, Paths, Circuits
+    \item Matrix Representations of Graphs
+    \item Eulerian Graphs and Hamiltonian Graphs
+    \item Planar Graphs
+    \item Trees, Undirected Trees, Spanning Trees, Rooted Trees
+\end{itemize} \\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Understand and master the concepts of mathematical logic, set theory, algebraic systems, graph theory, and other basic discrete structures
+        \item Acquire the descriptive language and methods essential for dealing with discrete structures
+        \item Be capable of using the language of discrete mathematics to model and solve practical problems
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\subsection[ENGEN103 Engineering Computing]{Engineering Computing}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Code} & ENGEN103 \\
+\hline
+\textbf{Course Name} & Engineering Computing \\
+\hline
+\textbf{Credits (HNU)} & 3.0 \\
+\hline
+\textbf{Points (UoW)} & 15 \\
+\hline
+\textbf{Contact Hours} & 48 \\
+\hline
+\textbf{Textbook} & \emph{Numerical Computing with MATLAB}, Cleve B. Moler\\
+\hline
+\textbf{Description} & Engineering Computing is suitable for beginners in fields such as Numerical Methods and Matlab Technical Computing. The course focuses on proficient use of the mathematical software Matlab and on how to use Matlab to implement efficient mathematical computing methods.\\
+\hline
+\textbf{Topic} & 
+\begin{itemize}
+    \item Introduction to Matlab and Classical Mathematical Concepts: Golden Ratio, Fibonacci Sequence, Fractal Fern, Magic Square Matrix, Cryptography, Number Theory Problems, and Floating-Point Arithmetic
+    \item Linear Equations: Solving Systems of Linear Equations, Matlab Backslash Matrix Left Division Operator, 3×3 System of Equations Example, Permutation Matrices and Three-Solution Matrices, LU Decomposition, Necessity of Pivoting, Matlab Simple Application Demonstration, Effects of Rounding Errors, Norms and Condition Numbers, Sparse Matrices and Banded Matrices, PageRank and Markov Chains, etc.
+    \item Interpolation: Common Interpolation Methods, including: Interpolating Polynomials, Piecewise Linear Interpolation, Piecewise Cubic Hermite Interpolation, Shape-Preserving Piecewise Cubic Interpolation, Cubic Splines, Matlab Interpolation Application Demonstration, etc.
+    \item Engineering Problem Solving: Bisection Method, Newton's Method, Newton's Method Failure Example, Secant Method, Inverse Quadratic Interpolation Method, Zeroin Algorithm, Value Solving and Inverse Interpolation, and Using Matlab for Application Solving
+    \item Least Squares: Models and Curve Fitting, Norms, Population Model Interactive Interface, Householder Reflections, QR Decomposition, Pseudoinverse, Rank Deficiency, and Introduction to Separable Least Squares, etc.
+\end{itemize}\\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Master Matlab programming methods, and be able to use Matlab tools and write code to solve simple mathematical problems
+        \item Master basic engineering computing methods, such as linear equation solving methods, interpolation methods, least squares methods, etc., and be able to use these engineering computing methods to solve simple practical application problems
+        \item Understand the scientific principles of engineering computing methods, master the skills of using engineering computing methods to solve practical problems, and possess the ability to independently analyze problems, build models, and solve problems
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\subsection{Fundamentals of Comprehensive Mathematics}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Name} & Fundamentals of Comprehensive Mathematics \\
+\hline
+\textbf{Credits (HNU)} & 4.0 \\
+\hline
+\textbf{Points (UoW)} & \\
+\hline
+\textbf{Contact Hours} & 64 \\
+\hline
+\textbf{Textbook} & \emph{Matrix Analysis}, Roger A. Horn and Charles R. Johnson \newline
+\emph{Numerical Analysis}, Timothy Sauer \newline
+\emph{Convex Optimization}, Stephen Boyd and Lieven Vandenberghe \\
+\hline
+\textbf{Description} & The course 'Comprehensive Basic Mathematics' is designed to provide students with a holistic understanding of essential mathematical concepts, focusing on Matrix Analysis, Numerical Computation, and Operations Research. It highlights the interconnectedness of these fields. This course serves as a bridge between theoretical mathematics and practical applications, equipping students with the necessary tools to analyze complex problems, make informed decisions, and optimize solutions across various disciplines. \\
+\hline
+\textbf{Topic} & 
+Matrix Analysis
+\begin{itemize}
+    \item Definitions and Properties of Matrices
+    \item Matrix Operations and Manipulations
+    \item Characteristic Polynomial
+    \item Eigenvectors and Eigenspaces
+    \item QR Decomposition
+    \item Singular Value Decomposition
+\end{itemize}
+
+Numerical Methods
+\begin{itemize}
+    \item Sources of Error in Numerical Computation
+    \item Importance of Accuracy and Stability
+    \item Linear System Solvers(Gaussian Elimination, Iterative Methods)
+    \item Numerical Approximation of Functions
+\end{itemize}
+
+Optimization
+\begin{itemize}
+    \item Convex sets, Convex functions, Convex optimization problems
+    \item Convexity with respect to generalized inequalities
+    \item Unconstrained minimization
+    \item Constrained Optimization
+\end{itemize}\\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Through the study of course 'Comprehensive Basic Mathematics', students will be able to integrate the principles of Matrix Analysis, Numerical Computation, and Operations Research to tackle interdisciplinary problems. They will develop critical thinking skills, analytical abilities, and a practical approach to problem-solving by applying mathematical concepts to diverse fields such as engineering, economics, and computer science.
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\subsection{Random Process}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Name} & Random Process\\
+\hline
+\textbf{Credits (HNU)} & 3.5 \\
+\hline
+\textbf{Points (UoW)} & \\
+\hline
+\textbf{Contact Hours} & 56 \\
+\hline
+\textbf{Textbook} & \emph{Random Process}, Zhigang Wang\\
+\hline
+\textbf{Description} & A study of the theory of random processes and its applications. \\
+\hline
+\textbf{Topic} &  
+\begin{itemize}
+    \item Review of probability and random variables
+    \item The definition and classification of random processes
+    \item Poisson process and renewal process
+    \item Markov chains
+    \item Continuous-time Markov chains
+    \item Stationary random processes
+    \item Spectral analysis of stationary processes
+    \item Stationary time series
+    \item Stochastic integration and stochastic differential equations
+\end{itemize}\\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Understand the foundations of discrete probability
+        \item Understand Markov chains and their transition matrices
+        \item Decompose a state space and understand its implications
+        \item Calculate stationary distributions and their properties
+        \item Use Markov chains to model real life situations
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\clearpage
+
+% part of computer science courses
+\section{Computer Science}
+\markright{Computer Science}
+
+\subsection[COMPX101 Introduction to Programming]{Introduction to Programming}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Code} & COMPX101 \\
+\hline
+\textbf{Course Name} & Introduction to Programming \\
+\hline
+\textbf{Credits (HNU)} & 5.0 \\
+\hline
+\textbf{Points (UoW)} & 15 \\
+\hline
+\textbf{Contact Hours} & 80 \\
+\hline
+\textbf{Textbook} & \emph{Starting out with Visual C\#}, Tony Gaddis \\
+\hline
+\textbf{Description} & This paper introduces computer programming in C\#, the exciting challenge of creating software and designing artificial worlds within the computer. You will learn how to create software in Visual Studio to solve problems and learn the fundamentals of writing computer code. The paper also provides brief introductions to important topics in computer science, such as databases and computer networks.\\
+\hline
+\textbf{Topic} & C\# and Visual Studio, 
+Number Representation, 
+Program Design and Graphics, 
+What is Computer Science, 
+Selection, 
+Computer Hardware - Memory, 
+Computer Hardware - CPU, 
+Repetition, 
+Problem Solving, 
+Console Programming, 
+Methods, 
+Text Files, 
+Arrays, 
+Lists and Structs, 
+Data Structures, 
+Databases, 
+Parallel Programming, 
+Operating Systems, 
+Computer Networks, 
+Cyber Security, 
+Machine Learning, 
+Human-Computer Interaction, 
+Exam Preparation\\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Perform basic application development using event-driven programming of graphical user interfaces or console programming. 
+        \item Design, build and execute applications using an Integrated Development Environment. 
+        \item Apply a broad range of programming constructs and language supported data structures to process data. 
+        \item Explain in general terms a range of foundational computer science concepts, such as number systems, file systems, and algorithms. 
+        \item Apply the computing principles and examples learned to new problems. 
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+
+\subsection[COMPX102 Object-Oriented Programming]{Object-Oriented Programming}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Code} & COMPX102 \\
+\hline
+\textbf{Course Name} & Object-Oriented Programming \\
+\hline
+\textbf{Credits (HNU)} & 5.5 \\
+\hline
+\textbf{Points (UoW)} & 15 \\
+\hline
+\textbf{Contact Hours} & 88 \\
+\hline
+\textbf{Textbook} & No textbook \\
+\hline
+\textbf{Description} & This paper builds on introductory programming experience, and assumes a knowledge of basic programming techniques, which it expands on particularly in the areas of data organisation and algorithms. It also provides an introduction to: object-oriented programming, computer architecture, Boolean algebra, assembly language, and program analysis.\\
+\hline
+\textbf{Topic} & Binary arithmetic and problem solving; classes; Boolean algebra; aggregation and composition; combinatorial logic circuits; UML and inheritance; abstract classes; polymorphism; the von Neumann architecture; interfaces; delegates and generics; stack and heap memory; search and sort algorithms; recursion, algorithm complexity and Big O notation; programme refactoring, testing and user interface design. \\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Design and implement C\# programs
+        \item Use object-oriented features such as multiple classes, associations between classes, inheritance and subtyping
+        \item Detail, at a conceptual level, how bits, bytes, Boolean logic, and digital circuits, are used to form the Von Neumann model of computer architecture, which underpins the design of modern day computers: from smart phones to the fastest super-computer
+        \item Give an overview of how various high-level C\# features can be implemented using low-level machine code of a typical computer
+        \item Understand and explain the computer science topics of sorting, searching, and program analysis using Big O Notation
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\subsection[ENGEE233 Digital Electronics and Microprocessors]{Digital Electronics and Microprocessors}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Code} & ENGEE233 \\
+\hline
+\textbf{Course Name} & Digital Electronics and Microprocessors \\
+\hline
+\textbf{Credits (HNU)} & 3.0 \\
+\hline
+\textbf{Points (UoW)} & 15 \\
+\hline
+\textbf{Contact Hours} & 48 \\
+\hline
+\textbf{Textbook} & \emph{Digital Design and Computer Architecture}, Harris and Harris \\
+\hline
+\textbf{Description} & This paper provides students with an introduction to digital electronics, microprocessors and the operation of computer systems. It covers combinatorial and sequential logic, hardware description languages, processor architecture and construction, and the way in which the hardware and software co-operate to allow the execution of programs written in a high-level language.\\
+\hline
+\textbf{Topic} & Logic gates and Boolean algebra review, 
+Multi-level circuits, 
+Combinatorial circuits, 
+Flip flops, 
+Sequential circuits,  
+Verilog: Introduction to Hardware Description Languages, 
+Verilog: Parallel vs. Sequential Logic, 
+Verilog: Clocks, Resets and Timing Closure, 
+Verilog: Finite State Machines, 
+Verilog: Advanced Designs, 
+Verilog: From FSM to RISC Processor architecture and construction, 
+Input and Output, 
+Subroutines and Stacks, 
+Exceptions and Interrupts, 
+Number Representation, 
+CPU Architecture. \\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Design circuits with logic gates and/or FPGAs
+        \item Design, simulate and test circuits using a hardware description language.
+        \item Identify the principal components and describe the operation of a RISC microprocessor
+        \item Specify, optimize and implement a finite state machine
+        \item Write and debug programs using an assembly language
+        \item Explain the relationship between high-level languages, assembly code, and machine code
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\subsection[CSMAX175 Introduction to Cyber Security]{Introduction to Cyber Security}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Code} & CSMAX175 \\
+\hline
+\textbf{Course Name} & Introduction to Cyber Security \\
+\hline
+\textbf{Credits (HNU)} & 3.0 \\
+\hline
+\textbf{Points (UoW)} & 15 \\
+\hline
+\textbf{Contact Hours} & 48 \\
+\hline
+\textbf{Textbook} & No textbook \\
+\hline
+\textbf{Description} & This paper provides an introduction to Cyber Security through the exploration of concepts such as digital information, digital identities, digital systems and their vulnerabilities.\\
+\hline
+\textbf{Topic} & Digital Information and Identities, 
+Importance of Information, 
+Security Properties: CIA, AAA Series, and STRIDE
+(CIA: Confidentiality, Integrity, and Availability; AAA Series: Authentication, Authorisation, Auditing, and Accountability; STRIDE: Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, and Elevation of privilege), 
+Digital Systems, 
+Vulnerabilities, 
+Security and Privacy, 
+Social Engineering\\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Locate relevant information for given criteria and critically evaluate and analyse it
+        \item Describe the ways information is used in digital systems
+        \item Explain the need for protecting digital identities
+        \item Compare and contrast between security and privacy
+        \item Describe how vulnerabilities arise in systems
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\subsection[COMPX201 Data Structures and Algorithms]{Data Structures and Algorithms}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Code} & COMPX201 \\
+\hline
+\textbf{Course Name} & Data Structures and Algorithms \\
+\hline
+\textbf{Credits (HNU)} & 3.0 \\
+\hline
+\textbf{Points (UoW)} & 15 \\
+\hline
+\textbf{Contact Hours} & 48 \\
+\hline
+\textbf{Textbook} & \emph{Data Structures and Problem Solving Using Java}, Mark Allen Weiss \\
+\hline
+\textbf{Description} & An introduction to abstract data types and dynamic data structures, along with principles of testing. This paper assumes familiarity with basic object-oriented programming as introduced within COMPX101 and COMPX102, and introduces programming with data structures using Java and the use of testing as a key concept in software development. Students learn how to program in Java and become familiar with the design, analysis, and application of commonly used data structures, including sets, lists, stacks, queues, trees, and hash-tables.\\
+\hline
+\textbf{Topic} & Abstract data types
+(An introduction to abstract data types in comparison to primitives), 
+Sets
+(Sets as a basic abstract data type for a collection of objects, along with set operations and options for representation), 
+Lists
+(Introduction to lists: restricted vs unrestricted, ordered vs unordered, and applications), 
+Trees
+(Binary search trees; representation options, basic operations, and applications), 
+Hashtables
+(Hash functions, hashtables and performance metrics), 
+Background ideas in testing
+(A summary of risk, hazard analysis and test design), 
+Unit testing using JUnit
+(How to write concrete tests for JUnit, based on a prior analysis of the specification of a function and basic test strategies), 
+Heaps
+(An introduction to heaps and priority queues), 
+Graphs
+(Introduction to graphs: undirected vs directed, weighted, breadth-first, depth-first and Dijkstra's algorithm, and applications), 
+Sorting Algorithms
+(Introduction to sorting algorithms and Big O notation. Selection and bubble sort, tree and merge sort, quick and heap sort), 
+Other data structures and greedy Algorithms
+(AVL trees, red-black trees, b-trees).\\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Implement basic dynamic data structures
+        \item Understand sets, lists, trees, and hash-tables, as well as other common data structures
+        \item Implement data structures, use them to solve problems, and understand issues pertaining to their computational complexity (e.g. time and space characteristics)
+        \item Understand a complete testing strategy by calling on knowledge of risk assessment, hazard analysis and many sorts of testing regime (e.g. unit, regression, integration)
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\subsection[COMPX202 Mobile Computing and Software Architecture]{Mobile Computing and Software Architecture}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Code} & COMPX202 \\
+\hline
+\textbf{Course Name} & Mobile Computing and Software Architecture \\
+\hline
+\textbf{Credits (HNU)} & 3.0 \\
+\hline
+\textbf{Points (UoW)} & 15 \\
+\hline
+\textbf{Contact Hours} & 48 \\
+\hline
+\textbf{Textbook} & No textbook \\
+\hline
+\textbf{Description} & This paper teaches mobile computing and software architecture. It revisits object-oriented programming, primarily as seen in Java. It also includes a focus on software development methodologies, version control, design methodologies, class diagrams, software patterns, testing, and an introduction to Android development.\\
+\hline
+\textbf{Topic} & Code quality, 
+Version control, 
+Software architecture, 
+UML, 
+Design patterns, 
+Testing, 
+Android UI, 
+Android functionality, 
+Android connectivity, 
+Android testing. \\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Apply a test design strategy within a supplied testing context
+        \item Create UML diagrams to describe the class structure for a given problem, and describe an example of a software architecture and its application of use
+        \item Explain the use of at least two different software design patterns in terms of their context of use and practical application
+        \item Make use of version control and develop interactive Android applications
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\subsection[COMPX234 Systems and Networks]{Systems and Networks}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Code} & COMPX234 \\
+\hline
+\textbf{Course Name} & Systems and Networks \\
+\hline
+\textbf{Credits (HNU)} & 3.0 \\
+\hline
+\textbf{Points (UoW)} & 15 \\
+\hline
+\textbf{Contact Hours} & 48 \\
+\hline
+\textbf{Textbook} & \emph{Operating System Concepts}, Avi Silberschatz, Peter Baer Galvin, Greg Gagne\newline
+                    \emph{Computer Networking: A Top-Down Approach}, James Kurose, Keith Ross\\
+\hline
+\textbf{Description} & 
+A study on principles of operating systems and networking and how they are applied to existing systems. It begins with the principles of operating systems, such as processes, memory management, and synchronisation, and evolves to networking principles and key protocols used on the Internet. Practical work will be based on using *nix systems to develop concurrent network programs using sockets and TCP/IP.\\
+\hline
+\textbf{Topic} & Processes and process management; threads and concurrency; memory management; file system management; networked systems; application layer; application protocols; the transport layer; the network layer; and the link layer. \\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Explain the main operating systems components and their effects on system performance
+        \item Design and implement simple concurrent and networked systems
+        \item Describe the workings of application, transport, and routing protocols
+        \item Explain how protocols at different layers affect the functional and non-functional properties of networked systems
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\subsection[COMPX225 Introduction to Databases and Web Development]{Introduction to Databases and Web Development}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Code} & COMPX225 \\
+\hline
+\textbf{Course Name} & Introduction to Databases and Web Development \\
+\hline
+\textbf{Credits (HNU)} & 3.0 \\
+\hline
+\textbf{Points (UoW)} & 15 \\
+\hline
+\textbf{Contact Hours} & 48 \\
+\hline
+\textbf{Textbook} & \emph{Database Processing: Fundamentals, Design and Implementation}, David M. Kroenke, David J. Auer, Scott L. Vandenberg, Robert C. Yoder \newline 
+                    \emph{HTML and CSS: The Comprehensive Guide}, Jürgen Wolf \newline
+                    \emph{PHP and MySQL: Novice to Ninja}, Tom Butler\\
+\hline
+\textbf{Description} & This paper provides a broad overview of the principles and technologies used in databases and web development. Databases are increasingly being used in both small and large businesses as the cornerstone of modern information management systems. Web development involves the creation of websites and web applications through client-side and server-side programming, including the development of database-driven web sites. Client-side topics include HTML, CSS and JavaScript to support the development of interactive web pages containing a variety of media. Server-side topics focus on the development of database-driven web sites and include PHP and protocols and standards supporting web applications design and security issues. Database topics include database design, ER diagrams, and database queries.\\
+\hline
+\textbf{Topic} & Database Design, 
+Relational Model, 
+ER Diagrams, 
+creating tables using SQL, 
+simple and complex queries and Joins,
+joining tables, 
+sub-queries
+aggregate Functions,
+grouping, 
+HTML, 
+CSS, 
+JavaScript, 
+Web Protocols and Standards.\\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Design relational databases using the entity-relationship modelling method
+        \item Query relational databases using the query language SQL
+        \item Utilise SQL tools such as stored procedures, triggers and views
+        \item Use HTML, CSS and JavaScript to develop interactive web pages and control layout and appearance
+        \item Implement server side functionality using a server-side programming language
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\subsection[COMPX216 Artificial Intelligence]{Artificial Intelligence}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Code} & COMPX216 \\
+\hline
+\textbf{Course Name} & Artificial Intelligence \\
+\hline
+\textbf{Credits (HNU)} & 3.0 \\
+\hline
+\textbf{Points (UoW)} & 15 \\
+\hline
+\textbf{Contact Hours} & 48 \\
+\hline
+\textbf{Textbook} & \emph{Artificial Intelligence: A Modern Approach}, Stuart Russell, Peter Norvig\\
+\hline
+\textbf{Description} & This paper provides an introduction to artificial intelligence, including techniques for searching and problem solving, knowledge representation and reasoning, and machine learning.\\
+\hline
+\textbf{Topic} & Uninformed and heuristic search, 
+local search and optimisation, 
+adversarial search and games, 
+knowledge representation and reasoning with propositional logic, 
+probabilistic models and natural language, 
+artificial neural networks, 
+computer vision with neural networks, 
+natural language processing with neural networks, 
+decision making using probabilities, 
+reinforcement learning.\\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Demonstrate understanding of the basic concepts of foundational subfields of artificial intelligence
+        \item Demonstrate understanding of basic AI algorithms
+        \item Demonstrate understanding of pseudo code given in an abstract functional programming style
+        \item Implement problem solving techniques in the programming language Python
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\subsection[COMPX310 Machine Learning]{Machine Learning}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Code} & COMPX310 \\
+\hline
+\textbf{Course Name} & Machine Learning \\
+\hline
+\textbf{Credits (HNU)} & 3.0 \\
+\hline
+\textbf{Points (UoW)} & 15 \\
+\hline
+\textbf{Contact Hours} & 48 \\
+\hline
+\textbf{Textbook} & \emph{Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems}, Aurélien Géron\\
+\hline
+\textbf{Description} & This paper introduces Machine Learning which is the science of making predictions. ML algorithms strive to be fast and highly accurate, while processing large datasets. This paper will use standard Python-based ML toolkits to teach the fundamentals of ML.\\
+\hline
+\textbf{Topic} & Supervised machine learning; logistic regression and gradient descent; basic parametric models and a statistical perspective on learning; understanding, evaluating, and improving performance; learning parametric models; SVM and SVR; decision trees; clustering analysis; neural networks and deep learning; ensemble methods: bagging and boosting; non-linear input transforms and kernels; Bayesian approach and Gaussian processes; generative models and learning from unlabelled data; user aspects of machine learning; ethics in ML.\\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Demonstrate good understanding of current mainstream Machine Learning methods
+        \item Explain the intuition, strengths and weaknesses of current mainstream Machine Learning methods
+        \item Use some current ML toolkits
+        \item Select an appropriate ML algorithm for a given learning problem
+        \item Prepare data, apply selected methods, and present results, for a given ML problem
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\subsection[COMPX361 Logic and Computation]{Logic and Computation}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Code} & COMPX361 \\
+\hline
+\textbf{Course Name} & Logic and Computation \\
+\hline
+\textbf{Credits (HNU)} & 2.5 \\
+\hline
+\textbf{Points (UoW)} & 15 \\
+\hline
+\textbf{Contact Hours} & 40 \\
+\hline
+\textbf{Textbook} & \emph{Lecture Notes on Finite Automata}, Graham French\\
+\hline
+\textbf{Description} & This paper is about the theoretical and mathematical ideas that underlie modern computing and computational thinking. \\
+\hline
+\textbf{Topic} & \begin{itemize}
+    \item Regular Languages and Finite State Automata
+    \item Turing Machines and Theory of Computation
+    \item Formal Grammers
+    \item Propositional Logic
+    \item Predicate Logic and Completeness
+    \item Mathematical Induction
+    \item Predicate Logic for Program Verification
+\end{itemize} \\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Demonstrate ability to build a Turing machine to perform a task selected from a range of basic computations, and understanding of the notions of computability, effective enumeration and the Halting Problem
+        \item Demonstrate ability to determine the logical status and equivalence of formulas using a truth table and symbolically, as well as to formulate and test validity of logical inferences
+        \item Demonstrate understanding of the basic quantifiers of predicate logic, including the concepts of model and validity, as well as of soundneess and completeness in logic, and ability to use the technique of mathematical induction
+        \item Demonstrate understanding of the concept of a formal language and the ways of combining languages, their links with grammars, and be able to build a finite state machine to recognise a given regular language
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\subsection[COMPX328 Natural Language Processing]{Natural Language Processing}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Code} & COMPX328 \\
+\hline
+\textbf{Course Name} & Natural Language Processing \\
+\hline
+\textbf{Credits (HNU)} & 3.0 \\
+\hline
+\textbf{Points (UoW)} & 15 \\
+\hline
+\textbf{Contact Hours} & 48 \\
+\hline
+\textbf{Textbook} & \emph{Deep Learning for Natural Language Processing: A Gentle Introduction}, Mihai Surdeanu, Marco A. Valenzuela-Escárcega \\
+\hline
+\textbf{Description} & This paper studies natural language processing (NLP) for artificial intelligence from the perspective of deep learning using neural networks. It covers both foundational methods and state-of-the-art techniques in NLP, including the attention mechanism, transformers, retrieval-augmented generation, multimodal large language models, transfer learning, and applications.\\
+\hline
+\textbf{Topic} &Introduction to natural language processing, 
+deep learning operations for NLP, 
+attention mechanism, 
+Transformers, 
+NLP applications, 
+retrieval-augmented generation, 
+common deep learning practices, 
+multimodal large language models, 
+transfer learning, 
+future of NLP.\\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Explain the theoretical foundations of natural language processing using deep learning techniques
+        \item Analyse natural language processing problems, determine whether deep learning approaches are suitable, and choose an appropriate approach if that is the case
+        \item Develop software for deep-learning-based natural language processing using appropriate programming libraries
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\subsection[COMPX326 Computer Vision]{Computer Vision}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Code} & COMPX326 \\
+\hline
+\textbf{Course Name} & Computer Vision \\
+\hline
+\textbf{Credits (HNU)} & 3.0 \\
+\hline
+\textbf{Points (UoW)} & 15 \\
+\hline
+\textbf{Contact Hours} & 48 \\
+\hline
+\textbf{Textbook} & \emph{Modern Computer Vision with PyTorch: A Practical Roadmap From Deep Learning Fundamentals to Advanced Applications and Generative AI}, V Kishore Ayyadevara, Yeshwanth Reddy \\
+\hline
+\textbf{Description} & This paper studies computer vision using deep artificial neural networks. It covers both foundational knowledge and state-of-the-art techniques in computer vision, including convolutional neural networks, vision transformers, data augmentation, transfer learning, computing aspects, and applications.\\
+\hline
+\textbf{Topic} & Introduction to computer vision, 
+deep learning operations for computer vision, 
+convolutional neural networks, 
+data augmentation, 
+vision transformers, 
+transfer learning, 
+common deep learning practices, 
+computing aspects, 
+saliency, 
+computer vision applications, 
+future of computer vision.\\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Explain the theoretical foundations of computer vision using deep learning techniques
+        \item Analyse computer vision problems, determine whether deep learning approaches are suitable, and choose an appropriate approach if that is the case
+        \item Develop software for deep-learning-based computer vision using appropriate programming libraries
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\subsection[COMPX329 Intelligent System]{Intelligent System}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Code} & COMPX329 \\
+\hline
+\textbf{Course Name} & Intelligent System \\
+\hline
+\textbf{Credits (HNU)} & 3.0 \\
+\hline
+\textbf{Points (UoW)} & 15 \\
+\hline
+\textbf{Contact Hours} & 48 \\
+\hline
+\textbf{Textbook} & \emph{Artificial Intelligence: A Guide to Intelligent Systems}, Michael Negnevitsky\\
+\hline
+\textbf{Description} & Intelligent Systems is a highly practical and interdisciplinary course. The course introduces fundamental concepts and development environments for intelligent systems.\\
+\hline
+\textbf{Topic} & Theories of intelligent perception, intelligent computation, and intelligent execution/control, and explains representative architectures and operating mechanisms of typical intelligent systems, including cyber-physical systems, expert systems, fuzzy-logic systems, and robotic systems. The course also includes algorithm development related to intelligent systems using Python. \\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Understand the fundamental concepts and principles of intelligent systems, the structures and algorithms of typical intelligent systems, and recognize different types of intelligent systems
+        \item Become familiar with data and knowledge representation and processing in intelligent systems, data interaction in intelligent systems, and the basic workflow and methods for integrated design of computation and control
+        \item Use development tools to create engineering projects and perform code editing, compilation, debugging, and execution
+        \item Prepare laboratory/design reports and clearly describe task requirement analysis, scheme design, system design, and system testing and debugging
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\subsection[COMPX349 Embedded Systems]{Embedded Systems}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Code} & COMPX349 \\
+\hline
+\textbf{Course Name} & Embedded Systems \\
+\hline
+\textbf{Credits (HNU)} & 6.0 \\
+\hline
+\textbf{Points (UoW)} & 15 \\
+\hline
+\textbf{Contact Hours} & 96 \\
+\hline
+\textbf{Textbook} & \emph{Embedded System Analysis}, Yonghui Zhang \\
+\hline
+\textbf{Description} & This course covers the principles and design of embedded systems, including micro-controllers, embedded system architecture, real-time programming and operating systems, and Field Programmable Gate Arrays.\\
+\hline
+\textbf{Topic} & C programming language, 
+threads, 
+embedded Micros, 
+micro:bit scheduling, 
+I/O, 
+memory, 
+real time, 
+power, 
+networks, 
+SoC. \\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Identify the constraints and benefits of embedded systems
+        \item Develop efficient C code for limited memory and low power systems
+        \item Construct systems that are responsive in real time
+        \item Analyse hardware components used in embedded systems, considering their functionality for computation, storage, communication, and power usage
+        \item Analyse communication protocols and hardware used for I/O and system integration
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\subsection[COMPX398 Work-Integrated Learning Directed Study]{Work-Integrated Learning Directed Study}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Code} & COMPX398 \\
+\hline
+\textbf{Course Name} & Work-Integrated Learning Directed Study \\
+\hline
+\textbf{Credits (HNU)} & 6.0 \\
+\hline
+\textbf{Points (UoW)} & 30 \\
+\hline
+\textbf{Contact Hours} & 96 \\
+\hline
+\textbf{Textbook} & No textbook \\
+\hline
+\textbf{Description} & Students carry out an independent work-related project on an approved topic under staff supervision. \\
+\hline
+\end{longtable}
+
+\subsection{Python Programming}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Name} & Python Programming \\
+\hline
+\textbf{Credits (HNU)} & 2.0 \\
+\hline
+\textbf{Points (UoW)} & \\
+\hline
+\textbf{Contact Hours} & 32 \\
+\hline
+\textbf{Textbook} & No textbook \\
+\hline
+\textbf{Description} & This paper provides an introduction to programming and problem solving using Python programming languages. The paper covers basic programming concepts such as conditional statements, loops, functions, basic data types and data structures, and file input and output. Examples will mostly focus on Science and Engineering applications, including specific data science scenarios.\\
+\hline
+\textbf{Topic} & the Python development environment and the program development cycle; data types, variables and expressions; input, output and string formatting; decision and repetition structures; functions and parameter passing; lists, tuples, dictionaries and sets; file input and output; exception handling; modules and packages; an introduction to classes and objects; and the use of standard and third-party libraries for simple data analysis and visualisation. \\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Apply a broad range of programming constructs and language supported data structures to process data, including working with large data-sets
+        \item Apply the computing principles and examples learned to new problems in an data science context
+        \item Design, build and execute programs using both an editor and command-line tools
+        \item Explain in general terms a range of foundational computer science concepts, such as number systems, file systems, and algorithms
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\subsection{Digital Image Processing}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Name} & Digital Image Processing \\
+\hline
+\textbf{Credits (HNU)} & 3.0 \\
+\hline
+\textbf{Points (UoW)} & \\
+\hline
+\textbf{Contact Hours} & 48 \\
+\hline
+\textbf{Textbook} & \emph{Digital Image Processing}, Rafael C. Gonzalez, Richard E. Woods \\
+\hline
+\textbf{Description} & An introduction to the basic principles and methods of digital image processing. \\
+\hline
+\textbf{Topic} & 
+\begin{itemize}
+    \item Introduction: Concepts and Examples of Digital Image Processing
+    \item Fundamentals of Digital Image Processing: Principles and Mathematical Foundations Involved in Digital Image Processing Methods. Through basic concepts such as Visual Perception Elements, Light and the Electromagnetic Spectrum, and Image Sensing and Acquisition, introduce Image Sampling, Basic Mathematical Methods in Digital Image Processing, etc.
+    \item Intensity Transformations and Spatial Filtering: Intensity Transformation Methods in Digital Image Processing, such as Geometric Transformations, Linear Transformations, Histogram Processing, etc. Introduce different classical filtering methods in Digital Image Processing, such as various Spatial Filters. Through several applications of Intensity Transformations and Image Filtering, strengthen the understanding and application of key and difficult knowledge.
+    \item Frequency Domain Filtering: Principles and Basic Concepts of the Fourier Transform, Simple Applications of the Fourier Transform. Combined with the Properties of the Fourier Transform, use the Fourier Transform to process digital images, accomplishing Image Denoising and Image Enhancement. Learn application techniques of the Fourier Transform and its transformed forms.
+    \item Color Image Processing: Color Models and Color Image Processing Methods. Combined with the study of Color Transformation Methods, introduce common tasks in Color Image Processing, effects of Color Image Processing, etc.
+\end{itemize}\\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Master the principles of digital image generation and of digital image processing methods, and demonstrate familiarity with
+        the mathematical foundations of digital images and of digital image processing methods
+        \item Master the principles of spatial- and frequency-domain transforms, and apply spatial- and frequency-domain tools competently
+        in digital image processing
+        \item Develop the ability to apply digital image processing methods to practical problems, and to analyse, model mathematically and
+        solve digital image processing problems independently
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\subsection{Deep Learning}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Name} & Deep Learning \\
+\hline
+\textbf{Credits (HNU)} & 3.0 \\
+\hline
+\textbf{Points (UoW)} & \\
+\hline
+\textbf{Contact Hours} & 48 \\
+\hline
+\textbf{Textbook} & \emph{Deep Learning}, Ian Goodfellow, Yoshua Bengio, Aaron Courville \\
+\hline
+\textbf{Description} & An introduction to the basic concepts and foundations of deep learning. The course covers deep neural networks such as AlexNet
+  and how they are trained; open-source deep learning tools and frameworks such as TensorFlow and PyTorch; applications of deep
+  learning in natural language understanding and computer vision; and advanced topics including transfer learning and reinforcement
+  learning.\\
+\hline
+\textbf{Topic} & deep feedforward networks; network optimisation and regularisation for training deep models; convolutional networks; sequence modelling with recurrent and recursive networks; attention mechanisms and external memory; practical methodology for deep learning projects; guided reading of selected research papers. \\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Understand the fundamental concepts and knowledge of deep learning together with the mainstream algorithms and techniques in the field
+        \item Implement deep learning algorithms in Python
+        \item Select appropriate analytical and research methods, techniques and platforms to meet the requirements of a given task
+        \item Use deep learning platforms to complete basic natural language processing and computer vision tasks
+        \item Carry out requirements analysis, solution design and system debugging for a given task, and produce a written report
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+
+\subsection{Algorithm Analysis and Design}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Name} & Algorithm Analysis and Design \\
+\hline
+\textbf{Credits (HNU)} & 3.0 \\
+\hline
+\textbf{Points (UoW)} & \\
+\hline
+\textbf{Contact Hours} & 48 \\
+\hline
+\textbf{Textbook} & \emph{Introduction to Algorithms}, Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein \\
+\hline
+\textbf{Description} & A study of the design and analysis of computer algorithms. \\
+\hline
+\textbf{Topic} & The foundations of algorithm analysis, including asymptotic notation, recurrences, the master theorem and probabilistic analysis; sorting algorithms and order statistics, including heapsort, quicksort and linear-time sorting; elementary and advanced data structures, including hash tables, binary search trees, red-black trees and B-trees; algorithm design techniques, including divide and conquer, dynamic programming, greedy algorithms and amortised analysis; graph algorithms, including breadth-first and depth-first search, topological sorting, minimum spanning trees, shortest paths and maximum flow; and an introduction to NP-completeness and approximation algorithms. \\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Analyse complex problems to select, modify and develop appropriate algorithms and data structures as solutions
+        \item Analyze the performance of algorithms
+        \item Write rigorous correctness proofs for algorithms
+        \item Apply important algorithmic design paradigms and methods of analysis
+        \item Synthesize efficient algorithms in common engineering design situations
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\clearpage
+
+% part of other courses
+\section{Other Courses}
+\markright{Other Courses}
+
+\subsection[PHYSC100 General Physics]{General Physics}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Code} & PHYSC100 \\
+\hline
+\textbf{Course Name} & General Physics \\
+\hline
+\textbf{Credits (HNU)} & 6.0 \\
+\hline
+\textbf{Points (UoW)} & 15 \\
+\hline
+\textbf{Contact Hours} & 96 \\
+\hline
+\textbf{Textbook} & No textbook \\
+\hline
+\textbf{Description} & This paper covers fundamental concepts in physics that are applicable to many areas of engineering, science and technology.\\
+\hline
+\textbf{Topic} & Kinematics, mechanics, fluids, electric and magnetic forces and fields, electric circuits, optics, modern physics and relativity. \\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Examine the agreement between theoretical predictions and experimental results
+        \item Give explanations of physics phenomena
+        \item Perform, document and analyse experiments in the laboratory
+        \item Solve numerical physics problems
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\subsection{Engineering Drafting and CAD}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Name} & Engineering Drafting and CAD \\
+\hline
+\textbf{Credits (HNU)} & 2.0 \\
+\hline
+\textbf{Points (UoW)} & \\
+\hline
+\textbf{Contact Hours} & 32 \\
+\hline
+\textbf{Textbook} & \emph{Engineering Drafting and CAD}, Yuexiang Lin, Zhiguo Pan, Yanfen Liu, Hongwei Du \\
+\hline
+\textbf{Description} & A study of the fundamentals of engineering drawing and of drawing with computer-aided design software. Practical work uses CAD software to construct, edit, annotate and plot two-dimensional engineering drawings, using drawing and editing commands, layers and object properties, blocks, hatching, text and dimensions. \\
+\hline
+\textbf{Topic} & 
+\begin{itemize}
+    \item Engineering Drawing Projection Theory
+    \item Three-View Drawings of Basic Solids
+    \item Composition of Composite Solids and Their Three-View Drawings
+    \item Standard Parts and Commonly Used Parts
+    \item Content of Part Drawings and Selection of Views
+    \item Content of Assembly Drawings and Drawing Methods
+    \item Introduction to 2D Drawing Software and Basic Drawing Commands
+    \item Assembly Drawing in 3D Drawing Software
+\end{itemize}\\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Master basic engineering knowledge, be able to manually draw basic engineering drawings, master the basic theories and methods of engineering drawing, cultivate students' spatial imagination and conceptual ability, and cultivate students' ability to draw and read engineering drawings
+        \item Master computer drawing software, be able to use software to draw drawings and carry out correct dimensioning, cultivate students' basic ability in computer drawing, and cultivate students' work design ability and creative thinking
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\subsection{Signals and Systems}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Name} & Signals and Systems \\
+\hline
+\textbf{Credits (HNU)} & 3.5 \\
+\hline
+\textbf{Points (UoW)} & \\
+\hline
+\textbf{Contact Hours} & 56 \\
+\hline
+\textbf{Textbook} & \emph{Signals and Systems}, Alan V. Oppenheim, Alan S. Willsky, S. Hamid Nawab \\
+\hline
+\textbf{Description} & A study of the fundamental concepts and analytical methods of continuous-time and discrete-time signals and linear time-invariant (LTI) systems. \\
+\hline
+\textbf{Topic} & the classification and basic operations on continuous-time and discrete-time signals; the properties of systems, including linearity, time invariance and stability; time-domain analysis of LTI systems, including impulse response and convolution; Fourier series and the frequency-domain analysis of continuous-time periodic and aperiodic signals; the frequency-domain characterisation and analysis of LTI systems; the Laplace transform and complex-frequency-domain analysis of signals and systems; the analysis of system properties, spectra and structure using the system function; state-variable analysis; and the application of these methods to signal analysis and processing in artificial intelligence and to practical problems in communication engineering. \\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Master the basic classification and operations of continuous-time and discrete-time signals, the basic properties of systems
+            and the time-domain analysis of linear time-invariant (LTI) systems, together with the mathematical, physical and engineering
+            foundations required by the discipline
+        \item Master frequency-domain analysis of continuous-time periodic and aperiodic signals, and the frequency-domain characterisation
+     and analysis of LTI systems, and apply these methods to complex engineering problems involving signal analysis and processing
+     in artificial intelligence
+        \item Master complex-frequency-domain analysis of continuous-time signals and LTI systems, and use the system function to analyse
+     system properties, spectra and structure; understand state-variable analysis and its solution methods; and apply these tools
+     to practical engineering problems in communication
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\subsection{Principle of Automatic Control}
+\renewcommand{\arraystretch}{1.5} % 设置行高
+\begin{longtable}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Course Name} & Principle of Automatic Control \\
+\hline
+\textbf{Credits (HNU)} & 3.0 \\
+\hline
+\textbf{Points (UoW)} & \\
+\hline
+\textbf{Contact Hours} & 48 \\
+\hline
+\textbf{Textbook} & \emph{Principle of Automatic Control}, Shousong Hu \\
+\hline
+\textbf{Description} & Building on a background in mathematics and a basic understanding of system analysis, this course provides a systematic treatment
+  of classical control principles and methods, together with selected principles and methods from modern control theory. The course
+  focuses on developing students' ability to understand and apply the general methods used to analyse and design automatic control
+  systems, laying a solid foundation for further study in subsequent courses. \\
+\hline
+\textbf{Topic} & Basic concepts of automatic control systems and their classification; the mathematical modelling of control systems, including differential equations, the Laplace transform, transfer functions, block diagrams and signal flow graphs; time-domain analysis of linear systems, including the transient response of first-order and second-order systems, the Routh stability criterion and steady-state error analysis; the root-locus method for control system analysis and design; frequency-domain analysis, including frequency response, Bode plots, the Nyquist stability criterion and stability margins; and the compensation and correction of linear systems, including lead and lag compensation and PID control. \\
+\hline
+\textbf{Learning Outcomes} & 
+    \begin{itemize}
+        \item Understand the overall structure of automatic control, establish an initial grasp of how dynamic systems are modelled and described, and master time-domain methods for analysing dynamic systems
+        \item Apply the root-locus method and frequency-domain analysis to the analysis of control systems
+        \item Apply knowledge of advanced mathematics and physics to the design and compensation of systems, developing the ability to analyse problems and solve practical ones
+        \item Use numerical analysis software or automatic control laboratory equipment competently to build experimental set-ups, carry out experimental studies, analyse and process experimental data, and assess how parameters affect system performance specification
+    \end{itemize} \\
+\hline
+\end{longtable}
+
+\clearpage
+
+\end{document}
