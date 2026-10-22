@@ -50,22 +50,22 @@
 
 % title page
 \begin{titlepage}
- \centering
- \vspace*{2.5cm}
- {\Huge \textbf{Course Description}\par}
- \vspace{1.5cm}
- {\LARGE\studentname\par}
- \vfill
- {\LARGE\emph{\majornameA}\par}
- \vspace{0.5cm}
- {\Large\bfseries\univA\par}
- {\large\collegeA\par}
- \vspace{1.2cm}
- {\LARGE\emph{\majornameB}\par}
- \vspace{0.5cm}
- {\Large\bfseries\univB\par}
- {\large\collegeB\par}
- \vfill
+    \centering
+    \vspace*{2.5cm}
+    {\Huge \textbf{Course Description}\par}
+    \vspace{1.5cm}
+    {\LARGE\studentname\par}
+    \vfill
+    {\LARGE\emph{\majornameA}\par}
+    \vspace{0.5cm}
+    {\Large\bfseries\univA\par}
+    {\large\collegeA\par}
+    \vspace{1.2cm}
+    {\LARGE\emph{\majornameB}\par}
+    \vspace{0.5cm}
+    {\Large\bfseries\univB\par}
+    {\large\collegeB\par}
+    \vfill
 \end{titlepage}
 
 \clearpage
@@ -109,11 +109,47 @@
 \pagestyle{fancy} % 重新激活页眉和页脚
 \pagenumbering{arabic}
 
+% 如果想一页一门课，可以在每门课的subsection之后添加 \clearpage
+
+% 每一门课的模版
+% 
+% \subsection[...]{...}
+% \renewcommand{\arraystretch}{1.5} 
+% \begin{longtable}{|p{3cm}|p{10cm}|}
+% \hline
+% \textbf{Course Code} & ... \\
+% \hline
+% \textbf{Course Name} & ...\\
+% \hline
+% \textbf{Credits (HNU)} & ... \\
+% \hline
+% \textbf{Points (UoW)} & ... \\
+% \hline
+% \textbf{Contact Hours} & ... \\
+% \hline
+% \textbf{Textbook} & \emph{book name}, author\\
+% \hline
+% \textbf{Description} & ... \\
+% \hline
+% \textbf{Topic} & 
+%     \begin{itemize}
+%         \item ...
+%         \item ...
+%     \end{itemize}
+% \hline
+% \textbf{Learning Outcomes} & 
+%     \begin{itemize}
+%         \item ...
+%         \item ...
+%     \end{itemize} \\
+% \hline
+% \end{longtable}
+% 
+% \clearpage
+
 % part of math courses
 \section{Mathematics}
 \markright{Mathematics}
-
-% 如果想一页一门课，可以在每门课的subsection之后添加 \clearpage
 
 \subsection[MATHS103 Mathematics 1A]{Mathematics 1A}
 \renewcommand{\arraystretch}{1.5} % 设置行高
